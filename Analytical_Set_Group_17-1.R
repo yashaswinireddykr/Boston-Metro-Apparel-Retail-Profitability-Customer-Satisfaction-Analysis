@@ -170,3 +170,4 @@ coefficients_table <- summary_model$coefficients
 print(coefficients_table)
 write.csv(coefficients_table, "model_summary.csv")
 write_xlsx(as.data.frame(summary(model)$coefficients), "model_summary.xlsx")
+
