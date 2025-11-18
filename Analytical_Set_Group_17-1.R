@@ -11,7 +11,7 @@ customers_data <- customers
 
 # View the data
 head(sales_data)
-head(customers_data)
+head(customers_data) 
 
 # Check column names
 colnames(sales_data)
@@ -170,4 +170,5 @@ coefficients_table <- summary_model$coefficients
 print(coefficients_table)
 write.csv(coefficients_table, "model_summary.csv")
 write_xlsx(as.data.frame(summary(model)$coefficients), "model_summary.xlsx")
+
 
