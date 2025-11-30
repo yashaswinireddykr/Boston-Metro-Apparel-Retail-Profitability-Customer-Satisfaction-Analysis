@@ -77,7 +77,7 @@ write_xlsx(customer_purchases, "customer_purchases.xlsx")
 mean_sale <- mean(sales_data$sale.amount, na.rm = TRUE)  # Mean
 median_sale <- median(sales_data$sale.amount, na.rm = TRUE)  # Median
 sd_sale <- sd(sales_data$sale.amount, na.rm = TRUE)  # Standard Deviation
-skew_sale <- skewness(sales_data$sale.amount, na.rm = TRUE)
+skew_sale <- skewness(sales_data$sale.amount, na.rm = TRUE) 
 
 # Boxplot for all sale amounts
 ggplot(sales_data, aes(y = sale.amount)) +
@@ -170,6 +170,7 @@ coefficients_table <- summary_model$coefficients
 print(coefficients_table)
 write.csv(coefficients_table, "model_summary.csv")
 write_xlsx(as.data.frame(summary(model)$coefficients), "model_summary.xlsx")
+
 
 
 
