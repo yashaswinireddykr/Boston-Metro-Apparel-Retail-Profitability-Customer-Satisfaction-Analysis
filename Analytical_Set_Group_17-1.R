@@ -3,7 +3,7 @@ library(readxl)
 library(writexl)
 library(moments) # for skewness
 library(ggplot2) # for plots
-library(dplyr) 
+library(dplyr)
 
 # Load the datasets
 sales_data <- sales
@@ -170,6 +170,7 @@ coefficients_table <- summary_model$coefficients
 print(coefficients_table)
 write.csv(coefficients_table, "model_summary.csv")
 write_xlsx(as.data.frame(summary(model)$coefficients), "model_summary.xlsx")
+
 
 
 
