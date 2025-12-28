@@ -180,3 +180,4 @@ write_xlsx(as.data.frame(summary(model)$coefficients), "model_summary.xlsx")
 
 
 
+
